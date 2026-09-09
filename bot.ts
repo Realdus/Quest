@@ -1,10 +1,10 @@
 import { GatewayDispatchEvents } from 'discord-api-types/v10';
-import { ClientQuest } from './src/client';
+import { Client } from './src/client';
 import { Utils } from './src/utils';
 
 let currentUserId: string | null = null;
 
-const client = new ClientQuest(process.env.TOKEN!);
+const client = new Client(process.env.TOKEN!);
 
 /*
 client.on(
